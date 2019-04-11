@@ -1,0 +1,8 @@
+{
+  "name": "@jats4r/dtds",
+  "version": "0.0.1",
+  "files": ["schema", "catalog.xml"],
+  "scripts": {
+    "fetch": "php scripts/fetch.php"
+  }
+}
