@@ -8,17 +8,21 @@ curl_setopt($curl, CURLOPT_ENCODING, '');
 function build_path($uri) {
     $parts = parse_url($uri);
 
-    return "schema/{$parts['host']}{$parts['path']}";
+    return "data/{$parts['host']}{$parts['path']}";
+}
 
-//    [,, $version, $file] = explode('/', $parts['path']);
-//
-//    return "schema/{$version}/{$file}";
+function build_version_path($uri) {
+    $parts = parse_url($uri);
+
+    [,, $version, $file] = explode('/', $parts['path']);
+
+    return "schema/{$version}/{$file}";
 }
 
 libxml_set_external_entity_loader(function($publicId, $systemId) use ($curl) {
     print "$publicId\n";
 
-    if (preg_match('/^schema\/(.+)/', $systemId, $matches)) {
+    if (preg_match('/^data\/(.+)/', $systemId, $matches)) {
         $systemId = 'http://' . $matches[1];
     }
 
@@ -80,7 +84,7 @@ $files = [
     ]
 ];
 
-$paths = [];
+$systemIds = [];
 
 foreach ($files as $colour => $names) {
     foreach ($versions as $version => $date) {
@@ -96,12 +100,13 @@ XML;
             $doc->loadXML($xml, LIBXML_DTDLOAD);
             $doc->validate();
 
-            $paths[$publicId] = build_path($systemId);
+            $systemIds[$publicId] = $systemId;
+//            $paths[$publicId] = build_version_path($systemId);
         }
     }
 }
 
-// build the catalog
+// merge directories and build the catalog
 
 $implementation = new DOMImplementation();
 $dtd = $implementation->createDocumentType('catalog',
@@ -110,10 +115,35 @@ $dtd = $implementation->createDocumentType('catalog',
 $catalog = $implementation->createDocument('urn:oasis:names:tc:entity:xmlns:xml:catalog', 'catalog', $dtd);
 $catalog->documentElement->setAttribute('prefer', 'public');
 
-foreach ($paths as $publicId => $path) {
+// TODO: remove old data folder
+
+foreach ($systemIds as $publicId => $systemId) {
+    $path = build_path($systemId);
+    $versionPath = build_version_path($systemId);
+
+    $dir = dirname($path);
+    $versionDir = dirname($versionPath);
+
+    $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
+
+    foreach ($iterator as $info) {
+        if ($info->isFile()) {
+            $inputPath = $info->getPathname();
+            $relativePath = join('/', array_slice(explode('/', $inputPath), 4));
+            $outputPath = "$versionDir/$relativePath";
+            $outputDir = dirname($outputPath);
+
+            if (!file_exists($outputDir)) {
+                mkdir($outputDir, 0777, true);
+            }
+
+            copy($inputPath, $outputPath);
+        }
+    }
+
     $entry = $catalog->createElement('public');
     $entry->setAttribute('publicId', $publicId);
-    $entry->setAttribute('uri', $path);
+    $entry->setAttribute('uri', $versionPath);
     $catalog->documentElement->appendChild($entry);
 }
 

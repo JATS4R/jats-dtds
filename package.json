@@ -5,6 +5,9 @@
     "schema",
     "catalog.xml"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "fetch": "php scripts/fetch.php"
   }
