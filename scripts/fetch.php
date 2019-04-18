@@ -8,31 +8,14 @@ curl_setopt($curl, CURLOPT_ENCODING, '');
 function build_path($uri) {
     $parts = parse_url($uri);
 
-//    print_r($parts);
-
     return "schema/{$parts['host']}{$parts['path']}";
+
+//    [,, $version, $file] = explode('/', $parts['path']);
+//
+//    return "schema/{$version}/{$file}";
 }
 
-function fetch_url ($curl, $url) {
-    print "$url\n";
-    curl_setopt($curl,CURLOPT_URL, $url);
-    $data = curl_exec($curl);
-
-    if ($errorCode = curl_errno($curl)) {
-        $error = curl_strerror($errorCode);
-        throw new Exception("Error fetching $url: $error");
-    }
-
-    if (!$data) {
-        throw new Exception("No data found at $url");
-    }
-
-    return $data;
-}
-
-$paths = [];
-
-libxml_set_external_entity_loader(function($publicId, $systemId) use ($curl, $catalog, &$paths) {
+libxml_set_external_entity_loader(function($publicId, $systemId) use ($curl) {
     print "$publicId\n";
 
     if (preg_match('/^schema\/(.+)/', $systemId, $matches)) {
@@ -48,26 +31,31 @@ libxml_set_external_entity_loader(function($publicId, $systemId) use ($curl, $ca
             mkdir($dir, 0777, true);
         }
 
-        $data = fetch_url($curl, $systemId);
+        curl_setopt($curl,CURLOPT_URL, $systemId);
+
+        $data = curl_exec($curl);
+
+        if ($errorCode = curl_errno($curl)) {
+            $error = curl_strerror($errorCode);
+            throw new Exception("Error fetching $systemId: $error");
+        }
+
+        if (!$data) {
+            throw new Exception("No data found at $systemId");
+        }
 
         if (!preg_match('/^\s*<!--/', $data)) {
             throw new Exception("Not a DTD at $systemId");
         }
 
-//        if (!preg_match('/^<(!--|\?xml|xs:)/', $data)) {
-//            throw new Exception("Not a DTD/XSD at $uri");
-//        }
-
         file_put_contents($path, $data);
     }
-
-//    $paths[$publicId] = $path;
 
     return $path;
 });
 
 $versions = [
-//    '1.0' => '20120330',
+//    '1.0' => '20120330', // disabled as this version doesn't have all the formats
     '1.1d1' => '20130915',
     '1.1d2' => '20140930',
     '1.1d3' => '20150301',
@@ -92,6 +80,8 @@ $files = [
     ]
 ];
 
+$paths = [];
+
 foreach ($files as $colour => $names) {
     foreach ($versions as $version => $date) {
         foreach ($names as $name => $title) {
@@ -106,27 +96,12 @@ XML;
             $doc->loadXML($xml, LIBXML_DTDLOAD);
             $doc->validate();
 
-//            $schema = "https://jats.nlm.nih.gov/{$colour}/{$version}/xsd/JATS-{$name}.xsd";
-//            $doc->schemaValidate($schema);
-
             $paths[$publicId] = build_path($systemId);
         }
-
-//        $catalogPath = dirname(build_path($systemID)) . '/catalog.xml';
-//
-//        if (!file_exists($catalogPath)) {
-//            print "$catalogPath\n";
-//            $versionPath = preg_replace('/\./', '-', $version);
-//            $catalogURL = "https://jats.nlm.nih.gov/{$colour}/{$version}/catalog-jats-v{$versionPath}-no-base.xml";
-//            $data = fetch_url($curl, $catalogURL);
-//            file_put_contents($catalogPath, $data);
-//        }
-//
-//        $entry = $catalog->createElement('nextCatalog');
-//        $entry->setAttribute('catalog', $catalogPath);
-//        $catalog->documentElement->appendChild($entry);
     }
 }
+
+// build the catalog
 
 $implementation = new DOMImplementation();
 $dtd = $implementation->createDocumentType('catalog',
