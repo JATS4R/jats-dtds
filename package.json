@@ -2,9 +2,12 @@
   "name": "@jats4r/dtds",
   "version": "0.0.1",
   "files": [
-    "schema",
+    "schema/versions",
     "catalog.xml"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "fetch": "php scripts/fetch.php"
   }
