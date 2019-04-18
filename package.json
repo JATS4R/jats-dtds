@@ -2,7 +2,7 @@
   "name": "@jats4r/dtds",
   "version": "0.0.1",
   "files": [
-    "schema/versions",
+    "schema",
     "catalog.xml"
   ],
   "publishConfig": {
