@@ -59,7 +59,7 @@ libxml_set_external_entity_loader(function($publicId, $systemId) use ($curl) {
 });
 
 $versions = [
-//    '1.0' => '20120330', // disabled as this version doesn't have all the formats
+    '1.0' => '20120330',
     '1.1d1' => '20130915',
     '1.1d2' => '20140930',
     '1.1d3' => '20150301',
@@ -84,6 +84,13 @@ $files = [
     ]
 ];
 
+$ignore = [
+    'http://jats.nlm.nih.gov/archiving/1.0/JATS-archivearticle1-mathml3.dtd',
+    'http://jats.nlm.nih.gov/archiving/1.0/JATS-archive-oasis-article1-mathml3.dtd',
+    'http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing1-mathml3.dtd',
+    'http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing-oasis-article1-mathml3.dtd'
+];
+
 $systemIds = [];
 
 foreach ($files as $colour => $names) {
@@ -91,6 +98,10 @@ foreach ($files as $colour => $names) {
         foreach ($names as $name => $title) {
             $publicId = "-//NLM//DTD JATS (Z39.96) {$title} v{$version} {$date}//EN";
             $systemId = "http://jats.nlm.nih.gov/{$colour}/{$version}/JATS-{$name}.dtd";
+
+            if (in_array($systemId, $ignore)) {
+                continue;
+            }
 
             $xml = <<<XML
 <!DOCTYPE article PUBLIC "$publicId" "$systemId">
@@ -101,7 +112,6 @@ XML;
             $doc->validate();
 
             $systemIds[$publicId] = $systemId;
-//            $paths[$publicId] = build_version_path($systemId);
         }
     }
 }
