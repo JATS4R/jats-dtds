@@ -76,6 +76,10 @@ $files = [
         'archive-oasis-article1' => 'Journal Archiving and Interchange DTD with OASIS Tables',
         'archive-oasis-article1-mathml3' => 'Journal Archiving and Interchange DTD with OASIS Tables with MathML3'
     ],
+    'articleauthoring' => [
+        'articleauthoring1' => 'Article Authoring DTD',
+        'articleauthoring1-mathml3' => 'Article Authoring DTD with MathML3',
+    ],
     'publishing' => [
         'journalpublishing1' => 'Journal Publishing DTD',
         'journalpublishing1-mathml3' => 'Journal Publishing DTD with MathML3',
@@ -87,6 +91,7 @@ $files = [
 $ignore = [
     'http://jats.nlm.nih.gov/archiving/1.0/JATS-archivearticle1-mathml3.dtd',
     'http://jats.nlm.nih.gov/archiving/1.0/JATS-archive-oasis-article1-mathml3.dtd',
+    'http://jats.nlm.nih.gov/articleauthoring/1.0/JATS-articleauthoring1-mathml3.dtd',
     'http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing1-mathml3.dtd',
     'http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing-oasis-article1-mathml3.dtd'
 ];
