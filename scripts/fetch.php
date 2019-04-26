@@ -158,10 +158,10 @@ foreach ($systemIds as $publicId => $systemId) {
 
     $entry = $catalog->createElement('public');
     $entry->setAttribute('publicId', $publicId);
-    $entry->setAttribute('uri', $versionPath);
+    $entry->setAttribute('uri', preg_replace('/^schema\//', '', $versionPath));
     $catalog->documentElement->appendChild($entry);
 }
 
 $catalog->encoding = 'utf-8';
 $catalog->formatOutput = true;
-$catalog->save('catalog.xml');
+$catalog->save('schema/catalog.xml');

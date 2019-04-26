@@ -2,13 +2,14 @@
   "name": "@jats4r/dtds",
   "version": "0.0.2",
   "files": [
-    "schema",
-    "catalog.xml"
+    "schema"
   ],
+  "main": "schema",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "fetch": "php scripts/fetch.php"
+    "fetch": "php scripts/fetch.php",
+    "build": "echo 'The DTDs and catalog are ready.'"
   }
 }
