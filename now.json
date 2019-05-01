@@ -6,8 +6,5 @@
   "public": true,
   "builds": [
     { "src": "./schema/**", "use": "@now/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "schema/$1" }
   ]
 }
