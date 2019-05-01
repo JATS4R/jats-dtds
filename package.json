@@ -9,7 +9,6 @@
     "access": "public"
   },
   "scripts": {
-    "fetch": "php scripts/fetch.php",
-    "build": "echo 'The DTDs and catalog are ready.'"
+    "fetch": "php scripts/fetch.php"
   }
 }
