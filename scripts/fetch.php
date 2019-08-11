@@ -96,8 +96,6 @@ $ignore = [
     'http://jats.nlm.nih.gov/publishing/1.0/JATS-journalpublishing-oasis-article1-mathml3.dtd'
 ];
 
-$systemIds = [];
-
 foreach ($files as $colour => $names) {
     foreach ($versions as $version => $date) {
         foreach ($names as $name => $title) {
@@ -165,3 +163,5 @@ foreach ($systemIds as $publicId => $systemId) {
 $catalog->encoding = 'utf-8';
 $catalog->formatOutput = true;
 $catalog->save('schema/catalog.xml');
+
+file_put_contents('schema/doctypes.json', json_encode($systemIds, JSON_PRETTY_PRINT));
