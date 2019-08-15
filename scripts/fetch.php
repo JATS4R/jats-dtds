@@ -122,10 +122,10 @@ XML;
 // merge directories and build the catalog
 
 $implementation = new DOMImplementation();
-$dtd = $implementation->createDocumentType('catalog',
-    '-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN',
-    'http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd');
-$catalog = $implementation->createDocument('urn:oasis:names:tc:entity:xmlns:xml:catalog', 'catalog', $dtd);
+//$dtd = $implementation->createDocumentType('catalog',
+//    '-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN',
+//    'http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd');
+$catalog = $implementation->createDocument('urn:oasis:names:tc:entity:xmlns:xml:catalog', 'catalog');
 $catalog->documentElement->setAttribute('prefer', 'public');
 
 // TODO: remove old data folder

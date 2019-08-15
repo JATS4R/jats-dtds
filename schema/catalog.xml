@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" uri="1.0/JATS-archivearticle1.dtd"/>
   <public publicId="-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables v1.0 20120330//EN" uri="1.0/JATS-archive-oasis-article1.dtd"/>
