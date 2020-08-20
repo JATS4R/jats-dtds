@@ -1,8 +1,8 @@
 <!-- ============================================================= -->
 <!--  MODULE:    Journal Archiving DTD Customize Content and       -->
 <!--             Attributes Module                                 -->
-<!--  VERSION:   ANSI/NISO JATS Version 1.0 (Z39.96-2012)          -->
-<!--  DATE:      March 2015                                        -->
+<!--  VERSION:   ANSI/NISO JATS Version 1.3d1 (Z39.96-2019)        -->
+<!--  DATE:      August 2019                                       -->
 <!--                                                               -->
 <!-- ============================================================= -->
 
@@ -10,7 +10,7 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Content and Attributes Module v1.1d3 20150301//EN"
+"-//NLM//DTD JATS (Z39.96) Journal Archiving DTD Customize Content and Attributes Module v1.3d1 20190831//EN"
 Delivered as file "JATS-archivecustom-models1.ent"                 -->
 <!-- ============================================================= -->
 
@@ -114,6 +114,173 @@ Delivered as file "JATS-archivecustom-models1.ent"                 -->
 <!--
 
 Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+   ==============================================================
+     JATS Version 1.3d1 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.3.d1 (2019-08-31)
+    
+     ANSI NISO JATS is a continuing maintenance NISO Standard, 
+     which requires voting by the NISO and ANSI memberships 
+     to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     of the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+ 
+ 45. SIZE - All face markup (by face.markup class) was added to the 
+     content model of <size>.
+ 
+ 44. JATS "1.2" becomes "v1.3d1 20190831" (first committee
+     draft following the final ANSI/NISO vote)
+
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.2     (2019-02-08)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI vote on Feb 08, 2019, so it supersedes all Committee 
+     Drafts as well as the draft version JATS 1.2 2018 (the version
+     submitted for vote), becoming NISO JATS v1.2 20190208 
+     (ANSI/NISO Z39.96-2019).
+  
+ 43. JATS "1.2" becomes "v1.2 20190208" (final ANSI vote date)
+     "ANSI/NISO Z39.96-2015" becomes "ANSI/NISO Z39.96-2019"
+
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2018)
+     and BITS 2.1 (v2.0 20180401)
+                                   (DAL/BTU) v1.2     (2018-11-30)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI and NISO vote, so it supersedes all Committee Drafts
+     and becoming NISO JATS 1.2 (ANSI/NISO Z39.96-2018).
+  
+ 42. BITS "2.1" and "v2.0 20180401" remains unchanged.
+     JATS "1.2d2" and "v1.2d2 20180401" became
+     JATS "1.2" and "v1.2 20181130" 
+
+    =============================================================
+     BITS Version 2.1                (DAL/BTU) v2.1    (2018-04-01)
+     JATS Version 1.2d2              (DAL/BTU) v1.2d2  (2018-04-01)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     BITS is under continuous maintenance, and is modified at the
+     discretion of the working group.
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+
+ 41. ASSIGNING AUTHORITY - Added @assigning-authority to the
+     following elements, so that the type-of-identifier and
+     the party-responsible-for-identifier could both be
+     recorded. Previously, these values were both assigned to
+     the attribute @pub-id-type.
+        - <article-id>
+        - Note: <pub-id> already had @assigning-authority
+
+ 40. NON-MONETARY SUPPORT - Inside <article-meta> added new
+     <support-group> to hold both funding and
+     non-monetary support descriptions. <support-group> is 
+     both a peer to <funding-group> (backward compatibility)
+     and contains <funding-group>.
+ 
+ 39. PUBLICATION DATE-NOT-AVAILABLE - Inside <article-meta>, 
+     <front-stub>, <event>, and <event-desc>
+     added new element <pub-date-not-available>, as an 
+     alternative to <pub-date>. The meaning is that a 
+     publication date was (for whatever reason) not available. 
+     Presence of the element says nothing about publication 
+     status.
+ 
+ 38. DATE IN CITATION - Superscript and subscript added to
+     <date-in-citation>.
+  
+ 37. CONFERENCE DATE - Face markup (face-markup.class) 
+     added to <conf-date>.
+
+ 36. BITS "2.0" and "v2.0 20151225" became
+     BITS "2.1" and "v2.1 20180401". 
+   
+     JATS "1.2d1" and "v1.2d1 20171231" became
+     JATS "1.2d2" and "v1.2d2 20180401". 
+
+     No module names were changed. 
+     
+    =============================================================
+     JATS Version 1.2d1 (ANSI/NISO Z39.96-2015)
+                                   (DAL/BTU) v1.2d1  (2017-12-31)
+ 
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+  
+ 35. JATS "1.2d1" and "v1.2d1 20170631" became
+     JATS "1.2d1" and "v1.2d1 20171231". 
+
+    =============================================================
+     JATS Version 1.2d1              (DAL/BTU) v1.2d1  (2017-06-31)
+
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+ 
+ 34. X - both <inline-graphic> and <private-char> added to 
+     elements allowed in <x>.
+
+ 33. INLINE FORMULA - Added accessibility elements <alt-text> and
+     <long-desc> to the model of inline formula, by adding the 
+     access.class PE.
+
+ 32. ARTICLE META MODEL
+     - ARTICLE VERSION - Added new element <article-version>
+       inside <article-metadata> to hold one version number for  
+       the article. <article-version> element may repeat inside
+       <article-version-alternatives> to hold version numbers 
+       from different systems.
+ 
+     - NO DATE - <pub-date> (optional repeatable) is now
+       followed by the optional new element 
+       <pub-date-not-available>. 
+ 
+     - PUBLICATION HISTORY - Added new element based on BITS,
+       <pub-history>, to hold <event>s as <history> holds
+       <date>s. New internal elements: <event>, <event-desc>
+       
+ 31. JATS became version "1.2d1" and "v1.2d1 20170631" 
+
+    =============================================================
+     JATS Version 1.1                (DAL/BTU) v1.1  (2015-12-15)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     JATS 1.1 was approved in late 2015, so the formal public 
+     identifiers were changed in the modules and the catalogs.
+     No model or attribute changes were made at this time. 
+ 
+ 30. JATS became version "1.1" and "v1.1 20151215"
+
      =============================================================
      JATS Version 1.1d3             (DAL/BTU) v1.1d3  (2015-03-01)
    
@@ -130,7 +297,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      the decisions that have been made by the JATS Standing
      Committee.
 
- 29. JATS became version "1.1d3" and "v1.1d3 20150301//EN"
+ 29. JATS became version "1.1d3" and "v1.1d3 20150301"
 
      =============================================================
      JATS Version 1.1d2              (DAL/BTU) v1.1d2 (2014-09-30)
@@ -160,7 +327,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      and as a link.
    - Added new attribute @assigning-authority to <pub-id>, to
      carry new values such as "CrossRef" and to take some of the
-     semantic burden off the @pub-id-type attribute, when
+     semantic burden off the '@pub-id-type' attribute, when
      values are organizations such as "Genbank" or "PDB".
 
  26. <OBJECT-ID> INSIDE <TRANS-ABSTRACT>
@@ -181,13 +348,14 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      =============================================================
      NISO JATS Version 1.1d1           (DAL/BTU) v1.1 (2013-11-15)
    
-     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1) 
+     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1d1) 
 
      NISO JATS Standing Committee met and answered the requests and
      suggestions from the NISO request forms.
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
-     RNGs and supporting documentation are available at
-           http://jats.nlm.nih.gov/1.1/
+
+     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs,  
+     XSDs, RNGs and supporting documentation are available at
+           http://jats.nlm.nih.gov/1.0/
 
  23. NEW <era> ELEMENT
      Added <era> through date-parts.class to:
@@ -198,7 +366,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
       - access-date (deprecated
       - time-stamp (deprecated)
 
- 22. INSTITUTIONS TO STANDAARDS ORGANIZATIONS
+ 22. INSTITUTIONS TO STANDARDS ORGANIZATIONS
      Added the elements <institution-wrap> to the following elements
      through the institution-wrap.class:
       - <copyright-holder>
@@ -235,10 +403,10 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
    
      ANSI/NISO Z39.96-2012 (Version 1.0) 
 
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
-     RNGs and supporting documentation are available at
+     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs,  
+     XSDs, RNGs and supporting documentation are available at
            http://jats.nlm.nih.gov/1.0/
-   
+
  18. RELATED OBJECT - Added <related-object> everywhere
      <related-article> was used, including inside 
      <article-meta> using article-meta-model.
@@ -267,7 +435,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
  12. XREF REF TYPES - #9 below says "XREF ATTRIBUTES - Removed 
      the %xref-atts PE from this module since the regular version 
-     (in xlink3.ent) was equally inclusive. But it is NOT. 
+     (in xlink3.ent(?)) was equally inclusive. But it is NOT. 
      Brought back %xref-atts;
    
  11. ISSN-L ELEMENTS - Added <x> TO <issn-l> via 
@@ -295,7 +463,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
            http://jats.nlm.nih.gov/0.4.
 
   7. XREF ATTRIBUTES - Removed the %xref-atts PE from this module
-     since the regular version (in xlink3.ent) was equally inclusive.
+     since the regular version (in xlink3.ent(?)) was equally 
+     inclusive. See #12 above.
 
   6. ISSUE - Allowed to repeat inside <article-meta>
 
@@ -345,7 +514,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      Details on version 3.0 are available at
            http://dtd.nlm.nih.gov/3.0.
 
-  1. Updated public identifier to "v3.0 20080202//EN"              -->
+  1. Updated public identifier to "v3.0 20071031//EN"              -->
+
+<!-- ============================================================= -->
+<!-- Details concerning 
+     ANSI/NISO Z39.96-2015 JATS-based DTDs, XSDs, 
+     RNGs and supporting documentation are available at
+           http://jats.nlm.nih.gov/1.1/                            -->
 
 <!-- ============================================================= -->
 <!--                    INLINE MIXES TO OVER-RIDE CONTENT MODELS   -->
@@ -455,7 +630,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         data characters inside the content model of
                         the <conf-date> element                    -->
 <!ENTITY % conf-date-elements
-                        "| %date-parts.class; | %x.class;"           >
+                        "| %date-parts.class; | %face-markup.class; |
+                         %x.class;"                                  >
 
 
 <!--                    COMMENT ELEMENTS                           -->
@@ -510,8 +686,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         element                                    -->
 <!ENTITY % date-in-citation-elements
                         "| %date-parts.class; | %emphasis.class; |
-                           %x.class;"                                >
-
+                           %subsup.class; | %x.class;"               >
 
 <!--                    FORMULA, DISPLAY ELEMENTS                  -->
 <!--                    The elements that can be included along with
@@ -521,7 +696,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         "| %all-phrase; | %abstract.class; |
                          %access.class; | %break.class; | 
                          %display-back-matter.class; |
-                         %kwd-group.class; | %label.class; |
+                         %kwd-group.class; | %subj-group.class; |
+                         %label.class; |
                          %simple-display-noalt.class;"               >
 
 
@@ -570,7 +746,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         data characters inside the content model of
                         the <inline-formula> element.              -->
 <!ENTITY % inline-formula-elements
-                        "| %all-phrase;"                             >
+                        "| %access.class; | %all-phrase;"            >
 
 
 <!--                    INLINE SUPPLEMENTARY MATERIAL ELEMENTS     -->
@@ -838,7 +1014,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         data characters inside the content model of
                         the size element.                          -->
 <!ENTITY % size-elements
-                        "| %x.class;"                                >
+                        "| %face-markup.class; | %x.class;"          >
 
 
 <!--                    SOURCE ELEMENTS                            -->
@@ -959,8 +1135,10 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 
 <!--                    X ELEMENTS                                 -->
 <!--                    Elements for use inside the <x> element    -->
-<!ENTITY % x-elements   "| %emphasis.class; | %phrase-content.class; |
-                         %subsup.class; | %x.class;"                 >
+<!ENTITY % x-elements   "| %emphasis.class; | 
+                           %inline-display-noalt.class; |
+                           %phrase-content.class; | %subsup.class; |
+                           %x.class;"                                >
 
 
 <!-- ============================================================= -->
@@ -1071,11 +1249,12 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Content model for the metadata that is
                         specific to the article.                   -->
 <!ENTITY % article-meta-model
-                        "(article-id*, article-categories?,
-                         title-group?,
+                       "(article-id*, (%article-version.class;)?,
+                         article-categories?, title-group?,
                          (%contrib-group.class; |
                           %aff-alternatives.class; | %x.class;)*,
-                         author-notes?, pub-date*,
+                         author-notes?,  ( (%pub-date.class;)* | 
+                          pub-date-not-available?), 
                          volume*, volume-id*, volume-series?,
                          issue*, issue-id*, issue-title*,
                          issue-sponsor*, issue-part?, 
@@ -1085,10 +1264,12 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                            elocation-id )?,
                          (%address-link.class; | product |
                           supplementary-material)*,
-                         history?, permissions?, self-uri*,
+                         history?, pub-history?,
+                         permissions?, self-uri*,
                          (%related-article.class;)*, 
                          (%abstract.class;)*, trans-abstract*, 
-                         (%kwd-group.class;)*, funding-group*,
+                         (%kwd-group.class;)*, 
+                         funding-group*, support-group*,                      
                          conference*, counts?, custom-meta-group?)"  >
 
 
@@ -1238,23 +1419,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Attributes for the <article-id> element    -->
 <!ENTITY % article-id-atts
             "%jats-common-atts;                                       
-             pub-id-type
+             pub-id-type                
+                        CDATA                             #IMPLIED
+             assigning-authority                
                         CDATA                             #IMPLIED
              specific-use
                         CDATA                             #IMPLIED"  >
 
-
-<!--                    AWARD IDENTIFIER ATTRIBUTES                -->
-<!--                    Attributes for the <award-group> element   -->
-<!ENTITY % award-id-atts
-            "%jats-common-atts;                                       
-             rid        IDREFS                            #IMPLIED
-             award-type
-                        CDATA                             #IMPLIED
-             specific-use
-                        CDATA                             #IMPLIED
-             xml:lang   NMTOKEN                           #IMPLIED
-             %might-link-atts;"                                      >
 
 
 <!--                    DATE (HISTORICAL) ATTRIBUTES               -->
@@ -1304,6 +1475,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
              specific-use
                         CDATA                             #IMPLIED
              xml:lang   NMTOKEN                           #IMPLIED"  >
+
 
 
 <!--                    X(CROSS) REFERENCE ATTRIBUTES              -->

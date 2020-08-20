@@ -1,7 +1,7 @@
 <!-- ============================================================= -->
 <!--  MODULE:    JATS Namespaced OASIS XML Table Module            -->
-<!--  VERSION:   NISO 1.1d3                                        -->
-<!--  DATE:      March 2015                                        -->
+<!--  VERSION:   NISO 1.1                                          --> 
+<!--  DATE:      November 2018                                     --> 
 <!--                                                               -->
 <!-- ============================================================= -->
 
@@ -30,8 +30,56 @@
 <!--                    DTD VERSION/CHANGE HISTORY                 -->
 <!-- ============================================================= -->
 <!--
-
 Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2018)
+     and BITS 2.1 (v2.0 20180401)
+                                   (DAL/BTU) v1.2     (2018-11-30)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI and NISO vote, so it supersedes all Committee Drafts
+     and becoming NISO JATS 1.2 (ANSI/NISO Z39.96-2018).
+  
+ 10. BITS "2.1" and "v2.0 20180401" remains unchanged.
+     JATS "1.2d2" and "v1.2d2 20180401" became
+     JATS "1.2" and "v1.2 20181130" 
+
+    =============================================================
+     BITS Version 2.1                (DAL/BTU) v2.1    (2018-04-01)
+     JATS Version 1.2d2              (DAL/BTU) v1.2d2  (2018-04-01)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     BITS is under continuous maintenance, and is modified at the
+     discretion of the working group.
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+     
+  9. BITS "2.0" and "v2.0 20151225" became
+     BITS "2.1" and "v2.1 20180401". 
+   
+     JATS "1.2d1" and "v1.2d1 20171231" became
+     JATS "1.2d2" and "v1.2d2 20180401". 
+
+     No module names were changed.
+     =============================================================
+     JATS Version 1.1                (DAL/BTU) v1.1  (2015-12-15)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     JATS 1.1 was approved in late 2015, so the formal public 
+     identifiers were changed in the modules and the catalogs.
+     No model or attribute changes were made at this time. 
+ 
+  8. JATS became version "1.1" and "v1.1 20151215"
+
      =============================================================
      JATS Version 1.1d3             (DAL/BTU) v1.1d3  (2015-03-01)
    
@@ -56,7 +104,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      comment was changed to the correct:
      "-//OASIS//DTD XML Exchange Table Model 19990315//EN"
  
-  6. JATS became version "1.1d3" and "v1.1d3 20150301//EN"
+  6. JATS became version "1.1d3" and "v1.1 20150301//EN"
 
      =============================================================
      JATS Version 1.1d2              (DAL/BTU) v1.1d2 (2014-09-30)
@@ -115,7 +163,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      Details on version 3.0 are available at
            http://jats.nlm.nih.gov./3.0.
 
-  1. Updated public identifier to "v3.0 20080202//EN"              -->
+  1. Updated public identifier to "v3.0 20071031//EN"              -->
 
 <!-- ============================================================= -->
 
