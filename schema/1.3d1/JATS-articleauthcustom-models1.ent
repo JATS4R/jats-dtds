@@ -1,8 +1,8 @@
 <!-- ============================================================= -->
 <!--  MODULE:    Article Authoring DTD Over-ride Content and       -->
 <!--             Attribute Module                                  -->
-<!--  VERSION:   ANSI/NISO JATS Version 1.0 (Z39.96-2012)          -->
-<!--  DATE:      March 2015                                        -->
+<!--  VERSION:   ANSI/NISO JATS Version 1.3d1 (Z39.96-2019)        -->
+<!--  DATE:      August 2019                                       -->
 <!--                                                               -->
 <!-- ============================================================= -->
 
@@ -10,7 +10,7 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Content and Attribute Module v3.0 20080202//EN"
+"-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Content and Attribute Module v1.3d1 20190831//EN"
 Delivered as file "JATS-articleauthcustom-models1.ent"             -->
 <!-- ============================================================= -->
 
@@ -98,6 +98,192 @@ Delivered as file "JATS-articleauthcustom-models1.ent"             -->
 <!--
 
 Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+   ==============================================================
+     JATS Version 1.3d1 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.3.d1 (2019-08-31)
+    
+     ANSI NISO JATS is a continuing maintenance NISO Standard, 
+     which requires voting by the NISO and ANSI memberships 
+     to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     of the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+  
+ 52. LINKING FIGURES TO SUPPLEMENTARY MATERIAL
+ 
+     - Added the <xref> element (for an internal cross-reference)
+       to the large OR-group inside the body of a <figure>, to
+       be used to make a link to a <supplementary-material>
+       element as a way of recording that a datset or similar is
+       the data from which the figure was derived.
+
+     - Added <xref> to the models for <graphic> and <media>
+
+ 51. JATS "1.2" becomes "v1.3d1 20190831" (first committee
+     draft following the final ANSI/NISO vote) 
+
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.2     (2019-02-08)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI vote on Feb 08, 2019, so it supersedes all Committee 
+     Drafts as well as the draft version JATS 1.2 2018 (the version
+     submitted for vote), becoming NISO JATS v1.2 20190208 
+     (ANSI/NISO Z39.96-2019).
+  
+ 50. JATS "1.2" becomes "v1.2 20190208" (final ANSI vote date)
+     "ANSI/NISO Z39.96-2015" becomes "ANSI/NISO Z39.96-2019"
+     
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2018)
+     and BITS 2.1 (v2.0 20180401)
+                                   (DAL/BTU) v1.2     (2018-11-30)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI and NISO vote, so it supersedes all Committee Drafts
+     and becoming NISO JATS 1.2 (ANSI/NISO Z39.96-2018).
+  
+ 49. BITS "2.1" and "v2.0 20180401" remains unchanged.
+     JATS "1.2d2" and "v1.2d2 20180401" became
+     JATS "1.2" and "v1.2 20181130" 
+
+     =============================================================
+     BITS Version 2.1                (DAL/BTU) v2.1    (2018-04-01)
+     JATS Version 1.2d2              (DAL/BTU) v1.2d2  (2018-04-01)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     BITS is under continuous maintenance, and is modified at the
+     discretion of the working group.
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+
+ 48. PERSON GROUP TYPES  - Replaced the CDATA value for 
+     @person-group-type with list of values, parameter
+     entity %person-group-types;, reversing the decision
+     of Version 1.2d1.
+
+ 47. FOOTNOTES
+      - Made @fn-type from CDATA into a restricted list,
+        reversing the decision of version 1.2d1. 
+      - Added back the %fn-types; PE, which is used for values of
+        @fn-type
+      - Added new value "coi-statement", which is best practice
+        replacing value "conflict", which was left on the list.
+
+ 46. NON-MONETARY SUPPORT - Inside <article-meta> added new
+     <support-group> to hold both funding and
+     non-monetary support descriptions. <support-group> is 
+     both a peer to <funding-group> (backward compatibility)
+     and contains <funding-group>.
+
+ 45. ARRAY - Element added for use in embedded index terms
+     ONLY. Model reduced to the same as that of Blue;
+     therefore, override for array-model added here.
+ 
+ 44. BITS "2.0" and "v2.0 20151225" became
+     BITS "2.1" and "v2.1 20180401". 
+   
+     JATS "1.2d1" and "v1.2d1 20171231" became
+     JATS "1.2d2" and "v1.2d2 20180401". 
+
+     No module names were changed.
+ 
+   =============================================================
+     JATS Version 1.2d1 (ANSI/NISO Z39.96-2015)
+                                   (DAL/BTU) v1.2d1  (2017-12-31)
+ 
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+  
+ 43. JATS "1.2d1" and "v1.2d1 20170631" became
+     JATS "1.2d1" and "v1.2d1 20171231". 
+
+    =============================================================
+     JATS Version 1.2d1              (DAL/BTU) v1.2d1  (2017-06-31)
+
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+
+ 42. SOURCE - Deleted the override for source elements, since Blue, 
+     Pumpkin, and the default all have the same model.
+
+ 41. PERSON GROUP TYPES - Replaced the %person-group-types; parameter
+     entity (allauthors | assignee | author | compiler | curator | 
+     director | editor | guest-editor | illustrator | inventor |
+     research-assistant | translator | transed) with CDATA to allow
+     all types.
+ 
+ 40. SOURCE/CHAPTER TITLE/PART TITLE - Added the following elements
+     to <source>, <chapter-title>, and <part-title> to more
+     closely mirror the model of <article-title>:
+        - abbrev.class (abbrev)
+        - inline-display.class
+             alternatives | inline-graphic | private-char
+        - inline-math.class 
+             chem-struct | inline-formula
+        - math.class
+             mml:math
+        - phrase-content.class
+             named-content | styled-content
+
+ 39. ARTICLE META MODEL
+     - Added new optional element <article-version>
+       inside <article-meta> to hold one version number for the 
+       article.
+
+ 38. PERSON-GROUP
+     -  Made @person-group-type values into a parameter
+        entity and added values "illustrator" and "research-assistant".
+     -  Removed string-name.class PE from PE person-group-elements
+        because <string-name> was added to name.class, which
+        person-group-elements already used.
+
+ 37. FOOTNOTES
+      - Made @fn-type into a CDATA from a restricted list.
+        Deleted %fn-types; PE, which used to be used.
+
+ 36. JATS became version "1.2d1" and "v1.2d1 20170631" 
+
+    =============================================================
+     JATS Version 1.1                (DAL/BTU) v1.1  (2015-12-15)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     JATS 1.1 was approved in late 2015, so the formal public 
+     identifiers were changed in the modules and the catalogs.
+     No model or attribute changes were made at this time. 
+ 
+ 35. JATS became version "1.1" and "v1.1 20151215"
+
      =============================================================
      JATS Version 1.1d3             (DAL/BTU) v1.1d3  (2015-03-01)
    
@@ -114,7 +300,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      the decisions that have been made by the JATS Standing
      Committee.
 
- 34. JATS became version "1.1d3" and "v1.1d3 20150301//EN"
+ 34. JATS became version "1.1d3" and "v1.1 20150301//EN"
  
      =============================================================
      JATS Version 1.1d2              (DAL/BTU) v1.1d2 (2014-09-30)
@@ -133,7 +319,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
  
  32. UNUSED PARAMETER ENTITIES DELETED
         - aff-model
-        - fig-group-model
+        - fig-group-model (Pumpkin has no fig-groups)
  
  31. VERSION ELEMENTS EDITION
      The new element <version> uses the PE %-just-rendition,
@@ -173,15 +359,16 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      =============================================================
      NISO JATS Version 1.1d1           (DAL/BTU) v1.1 (2013-11-15)
    
-     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1) 
+     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1d1) 
 
      NISO JATS Standing Committee met and answered the requests and
      suggestions from the NISO request forms.
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
-     RNGs and supporting documentation are available at
-           http://jats.nlm.nih.gov/1.1/
 
- 21.GLOBAL ATTRIBUTES - Added the new parameter entity 
+     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs,  
+     XSDs, RNGs and supporting documentation are available at
+           http://jats.nlm.nih.gov/1.0/
+
+ 21. GLOBAL ATTRIBUTES - Added the new parameter entity 
         "%jats-common-atts;
      to every element in this module. This PE adds (for now) the
      @id attribute and the @xml:base attribute to every element,
@@ -237,8 +424,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
    
      ANSI/NISO Z39.96-2012 (Version 1.0) 
 
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
-     RNGs and supporting documentation are available at
+     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs,  
+     XSDs, RNGs and supporting documentation are available at
            http://jats.nlm.nih.gov/1.0/
    
  13. RELATED OBJECT - Added <related-object> everywhere
@@ -253,7 +440,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
  11. STANDARDS ORGANIZATION - Added std-organization-elements
      to reduce what was allowed in the names of standards bodies.
    
- 10. PARAGRPH PARAMETER ENTITY SYNTAX CHANGE (no models changed)
+ 10. PARAGRAPH PARAMETER ENTITY SYNTAX CHANGE (no models changed)
      Fixed content models that were stated as "p*", "p+", and
      "sec*" to use the %just-para.class; and %sec.class; classes. 
      Element models that were changed include:
@@ -330,8 +517,44 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      Details on version 3.0 are available at
            http://dtd.nlm.nih.gov/3.0.
 
-  1. Updated public identifier to "v3.0 20080202//EN"              -->
+  1. Updated public identifier to "v3.0 20071031//EN"              -->
 
+<!-- ============================================================= -->
+<!-- Details concerning 
+     ANSI/NISO Z39.96-2015 JATS-based DTDs, XSDs, 
+     RNGs and supporting documentation are available at
+           http://jats.nlm.nih.gov/1.1/                            -->
+
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE VALUE LISTS                      -->
+<!-- ============================================================= -->
+
+<!--                    FOOTNOTE TYPE VALUES                       -->
+<!--                    Used to mark the semantics of the footnote,
+                        what information does this footnote convey.
+                                                                   -->
+<!ENTITY % fn-types     "abbr | coi-statement | com | con | conflict |
+                         corresp | current-aff | deceased |
+                         edited-by | equal |
+                         financial-disclosure | on-leave |
+                         participating-researchers |
+                         presented-at | presented-by |
+                         present-address | previously-at |
+                         study-group-members |
+                         supplementary-material |
+                         supported-by | other"                       >
+
+
+<!--                    PERSON GROUP TYPE VALUES                   -->
+<!--                    Used to name the type of contributors,
+                        such as "editor".                          -->
+<!ENTITY % person-group-types     
+                        "allauthors | assignee | author | compiler | 
+                         curator | director | editor | guest-editor | 
+                         illustrator | inventor | research-assistant | 
+                         translator | transed"                       >
+ 
 <!-- ============================================================= -->
 <!--                    INLINE MIXES TO OVER-RIDE CONTENT MODELS   -->
 <!--                    (ELEMENTS TO BE ADDED TO #PCDATA IN MODELS)-->
@@ -350,6 +573,17 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % aff-elements "| %address.class; | %address-link.class; |
                            %break.class; |  %emphasis.class; |
                            %simple-link.class; | %subsup.class;"     >
+
+
+<!--                    ARRAY CONTENT MODEL                        -->
+<!--                    The element used to contain material in
+                        rows and columns that is just a block insert
+                        into the text flow, not numbered or called a
+                        table, and not titled or captioned         -->
+<!ENTITY % array-model  "((%access.class; | %address-link.class;)*,
+                          ( (%just-base-display.class;)* |
+                            %tbody.class; ),
+                          (%display-back-matter.class;)* )"          >
 
 
 <!--                    AWARD-ID ELEMENTS                          -->
@@ -563,8 +797,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Content model for the <person-group> element
                                                                    -->
 <!ENTITY % person-group-elements
-                        "| %name.class; | %person-group-info.class; |
-                          %string-name.class;"                       >
+                        "| %name.class; | %person-group-info.class;" >
 
 
 <!--                    PHONE NUMBER ELEMENTS                      -->
@@ -643,15 +876,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         ""                                           >
 
 
-<!--                    SOURCE ELEMENTS                            -->
-<!--                    The elements that can be included along with
-                        data characters inside the content model of
-                        a <source>.                                -->
-<!ENTITY % source-elements
-                        "| %emphasis.class; | %address-link.class; |
-                         %subsup.class;"                             >
-
-
 <!--                    STANDARDS ORGANIZATION ELEMENTS            -->
 <!--                    The elements that can be included along with
                         data characters inside the content model of
@@ -708,7 +932,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % volume-elements
                         ""                                           >
 
-
 <!-- ============================================================= -->
 <!--                    OVER-RIDES USED IN SHARED CONTENT MODELS   -->
 <!-- ============================================================= -->
@@ -720,7 +943,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         element such as a sidebar                  -->
 <!ENTITY % display-back-matter
                         "attrib?, permissions?"                      >
-
 
 <!-- ============================================================= -->
 <!--                    OVER-RIDES OF SHARED CONTENT MODELS (FULL) -->
@@ -791,12 +1013,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Full content model for the metadata that is
                         specific to the article.                   -->
 <!ENTITY % article-meta-model
-                        "(title-group, contrib-group,
+                        "(article-version?, title-group, 
+                          contrib-group,
                           (product | supplementary-material)*,
                           permissions?, self-uri*, 
                           (%related-article.class;)*, 
                           (%abstract.class;)+, (%kwd-group.class;)*,
-                          funding-group*,
+                          funding-group*, support-group*,   
                           conference*)"                              >
 
 
@@ -816,8 +1039,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % chem-struct-wrap-model
                         "((%id.class;)*, (%caption.class;)?,
                           (%access.class;)*,
-                          (%inside-chem-struct-wrap.class;)+,
-                          %display-back-matter;)"                    >
+                          (%inside-chem-struct-wrap.class;)+, 
+                          %display-back-matter; )"                   >
 
 
 <!--                    CONFERENCE MODEL                           -->
@@ -833,7 +1056,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Content model for the <contrib> element    -->
 <!ENTITY % contrib-model
                         "((%contrib-id.class;)*, (%name.class;)*, 
-                          (%degree.class;)*, role?, on-behalf-of?,
+                          (%degree.class;)*, role*, on-behalf-of?,
                           (%aff-alternatives.class;)*, address*,
                           email*, ext-link*, uri*, bio?,
                           author-comment?)"                          >
@@ -895,8 +1118,9 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                            %chem-struct-wrap.class; |
                            %intable-para.class; |
                            %just-table.class; | %just-para.class; |
-                           %list.class; | %simple-display.class;)*,
-                          %display-back-matter; )"                   >
+                           %list.class; | %simple-display.class; |
+                           %xref.class;)*, 
+                           %display-back-matter; )"                  > 
 
 
 <!--                    FOOTNOTE GROUP MODEL                       -->
@@ -921,7 +1145,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Content model for the <graphic> element    -->
 <!ENTITY % graphic-model
                         "((%id.class;)?, (%access.class;)*,
-                          (%display-back-matter;)*) "                >
+                          (%xref.class;)*,  
+                          %display-back-matter; )"                   > 
 
 
 <!--                    KEYWORD GROUP MODEL                        -->
@@ -946,7 +1171,9 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    MEDIA MODEL                                -->
 <!--                    Content model for the <media> element      -->
 <!ENTITY % media-model  "((%id.class;)?, (%access.class;)*,
-                          (%display-back-matter;)*) "                >
+                          (%xref.class;)*,   
+                          %display-back-matter; )"                   > 
+
 
 
 <!--                    ON BEHALF OF CONTENT ELEMENTS              -->
@@ -987,8 +1214,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % supplementary-material-model
                         "((%id.class;)*, (%caption.class;)?,
                           (%access.class; | %address-link.class;)*,
-                          (%just-para.class;)*,
-                          %display-back-matter; )"                   >
+                          (%just-para.class;)*, 
+                          %display-back-matter; )"                   > 
 
 
 <!--                    TABLE WRAPPER CONTENT MODEL                -->
@@ -999,8 +1226,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         "((%id.class;)*, (%caption.class;)?,
                           (%access.class;)*,
                           (%inside-table-wrap;)*,
-                          %table-foot.class;?,
-                          %display-back-matter; )"                   >
+                          %table-foot.class;?, 
+                          %display-back-matter; )"                   > 
 
 
 <!--                    TITLE GROUP MODEL                          -->
@@ -1020,29 +1247,12 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    VERSE GROUP MODEL                          -->
 <!--                    Content model for the <verse-group> element-->
 <!ENTITY % verse-group-model
-                        "(title?, subtitle?, verse-line+,
-                          %display-back-matter; ) "                  >
-
+                        "(title?, subtitle?, verse-line+, 
+                          %display-back-matter; )"                   > 
 
 <!-- ============================================================= -->
 <!--                    OVER-RIDES OF ATTRIBUTE VALUES             -->
 <!-- ============================================================= -->
-
-
-<!--                    FOOTNOTE TYPE VALUES                       -->
-<!--                    Used to mark the semantics of the footnote,
-                        what information does this footnote convey.
-                                                                   -->
-<!ENTITY % fn-types     "abbr | com | con | conflict |
-                         corresp | current-aff | deceased |
-                         edited-by | equal |
-                         financial-disclosure | on-leave |
-                         participating-researchers |
-                         presented-at | presented-by |
-                         present-address | previously-at |
-                         study-group-members |
-                         supplementary-material |
-                         supported-by | other"                       >
 
 
 <!--                    LIST PREFIX TYPES                          -->
@@ -1052,22 +1262,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         bulleted is bullets or other non-ordered
                         character, simple has no prefix at all.    -->
 <!ENTITY % list-types   "bullet | order | simple"                    >
-
-
-<!--                    CROSS(X)-REFERENCE TYPE VALUES             -->
-<!--                    Used to say to what the reference is pointing.
-                        May be used for type-specific processing or
-                        validation. Values are, for example:
-                        Affiliation "aff" and Figure "fig", and
-                        Bibliographic ref (to a citation.          -->
-<!ENTITY % ref-types    "aff | app | bibr | boxed-text | chem | 
-                         collab | contrib | corresp |
-                         disp-formula | fig | fn | kwd | list |
-                         plate | scheme | sec | statement |
-                         supplementary-material |
-                         table | table-fn |
-                         other"                                      >
-
 
 <!-- ============================================================= -->
 <!--                    DUPLICATE ATTRIBUTE DECLARATIONS           -->
@@ -1215,15 +1409,12 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
              xml:lang   NMTOKEN                           #IMPLIED"  >
 
 
-
 <!--                    PERSON GROUP ATTRIBUTES                    -->
 <!--                    Attributes for the <person-group> element  -->
 <!ENTITY % person-group-atts
             "%jats-common-atts;                                       
              person-group-type
-                        (allauthors | assignee | author | compiler |
-                         curator | director | editor | guest-editor |
-                         inventor | translator | transed) #IMPLIED
+                        (%person-group-types;)            #IMPLIED
              specific-use
                         CDATA                             #IMPLIED
              xml:lang   NMTOKEN                           #IMPLIED"  >
@@ -1239,6 +1430,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
              xml:lang   NMTOKEN                           #IMPLIED"  >
 
 
+
 <!--                    UNDERLINE ATTRIBUTES                       -->
 <!--                    Attributes for the <underline> element     -->
 <!ENTITY % underline-atts
@@ -1246,6 +1438,4 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
              toggle     (yes | no)                        #IMPLIED
              specific-use
                         CDATA                             #IMPLIED" >
-
-
 <!-- ================== End Authoring Over-ride Content/ATTLIST == -->

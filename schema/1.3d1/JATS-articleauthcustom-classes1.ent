@@ -1,7 +1,7 @@
 <!-- ============================================================= -->
 <!--  MODULE:    Article Authoring DTD Over-ride Classes Module    -->
-<!--  VERSION:   ANSI/NISO JATS Version 1.0 (Z39.96-2012)          -->
-<!--  DATE:      March 2015                                        -->
+<!--  VERSION:   ANSI/NISO JATS Version 1.3d1 (Z39.96-2019)        -->
+<!--  DATE:      August 2019                                       -->
 <!--                                                               -->
 <!-- ============================================================= -->
 
@@ -9,7 +9,7 @@
 <!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
 <!--                        TYPICAL INVOCATION                     -->
 <!--
-"-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Classes Module v1.1d3 20150301//EN"
+"-//NLM//DTD JATS (Z39.96) Article Authoring DTD Over-ride Classes Module v1.3d1 20190831//EN"
 Delivered as file "JATS-articleauthcustom-classes1.ent"            -->
 <!-- ============================================================= -->
 
@@ -93,10 +93,144 @@ Delivered as file "JATS-articleauthcustom-classes1.ent"            -->
 <!--                    DTD VERSION\CHANGE HISTORY                 -->
 <!-- ============================================================= -->
 <!--
-
-     =============================================================
-
 Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+   ==============================================================
+     JATS Version 1.3d1 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.3.d1 (2019-08-31)
+    
+     ANSI NISO JATS is a continuing maintenance NISO Standard, 
+     which requires voting by the NISO and ANSI memberships 
+     to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     of the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+     
+ 25. QUESTIONS AND ANSWERS - Added the BITS question and answer
+     models to JATS. 
+     
+      - The following elements were added to the block display 
+        class Paraemter Entity: 
+         - answer and answer-set
+         - explanation
+         - question, question-wrap, question-wrap-group
+      
+      - A new PE, block display no explanation, was added
+        for use in <answer> and <option> elements.
+  
+ 24. JATS "1.2" becomes "v1.3d1 20190831" (first committee
+     draft following the final ANSI/NISO vote) 
+
+   ==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2019)
+                                   (DAL/BTU) v1.2     (2019-02-08)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI vote on Feb 08, 2019, so it supersedes all Committee 
+     Drafts as well as the draft version JATS 1.2 2018 (the version
+     submitted for vote), becoming NISO JATS v1.2 20190208 
+     (ANSI/NISO Z39.96-2019).
+  
+ 23. JATS "1.2" becomes "v1.2 20190208" (final ANSI vote date)
+     "ANSI/NISO Z39.96-2015" becomes "ANSI/NISO Z39.96-2019"
+
+==============================================================
+     JATS Version 1.2 (ANSI/NISO Z39.96-2018)
+     and BITS 2.1 (v2.0 20180401)
+                                   (DAL/BTU) v1.2     (2018-11-30)
+    
+     NISO JATS is a continuing maintenance NISO Standard, which 
+     requires voting by the both the NISO and ANSI membership 
+     to be changed. This version of the NISO JATS was approved 
+     by ANSI and NISO vote, so it supersedes all Committee Drafts
+     and becoming NISO JATS 1.2 (ANSI/NISO Z39.96-2018).
+  
+ 22. BITS "2.1" and "v2.0 20180401" remains unchanged.
+     JATS "1.2d2" and "v1.2d2 20180401" became
+     JATS "1.2" and "v1.2 20181130" 
+
+    =============================================================
+     BITS Version 2.1                (DAL/BTU) v2.1    (2018-04-01)
+     JATS Version 1.2d2              (DAL/BTU) v1.2d2  (2018-04-01)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     BITS is under continuous maintenance, and is modified at the
+     discretion of the working group.
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+
+ 21. INLINE-INDEX - Added the elements <index-term> and
+     <index-term-range-end> to phrase class to add the ability
+     to tag inline (embedded) index terms.
+
+ 20. INLINE-MEDIA - <inline-media> added to all the classes that 
+     contained <inline-graphic>
+
+ 19. BITS "2.0" and "v2.0 20151225" became
+     BITS "2.1" and "v2.1 20180401". 
+   
+     JATS "1.2d1" and "v1.2d1 20171231" became
+     JATS "1.2d2" and "v1.2d2 20180401". 
+
+     No module names were changed.
+ 
+     =============================================================
+     JATS Version 1.2d1 (ANSI/NISO Z39.96-2015)
+                                   (DAL/BTU) v1.2d1  (2017-12-31)
+ 
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+  
+ 18. JATS "1.2d1" and "v1.2d1 20170631" became
+     JATS "1.2d1" and "v1.2d1 20171231". 
+
+    =============================================================
+     JATS Version 1.2d1              (DAL/BTU) v1.2d1  (2017-06-31)
+
+     NISO JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+      
+     This draft DTD represents an interim version of the
+     non-normative JATS DTD Suite, as an indication to JATS users
+     the decisions that have been made by the JATS Standing
+     Committee. This draft has not yet been given public review 
+     or voting. The formal public identifiers were changed in the 
+     modules and the catalogs.
+  
+ 17. CONTRIB - Deleted redefinition of name.class, which effectively
+     added <string-name> to <contrib>
+
+ 16. JATS became version "1.2d1" and "v1.2d1 20170631" 
+
+    =============================================================
+     JATS Version 1.1                (DAL/BTU) v1.1  (2015-12-15)
+
+     JATS is a continuing maintenance NISO Standard, which
+     requires voting by the ANSI and NISO memberships to be changed. 
+     JATS 1.1 was approved in late 2015, so the formal public 
+     identifiers were changed in the modules and the catalogs.
+     No model or attribute changes were made at this time. 
+ 
+ 15. JATS became version "1.1" and "v1.1 20151215"
+
      =============================================================
      JATS Version 1.1d3             (DAL/BTU) v1.1d3  (2015-03-01)
    
@@ -113,7 +247,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      the decisions that have been made by the JATS Standing
      Committee.
 
- 14. JATS became version "1.1d3" and "v1.1d3 20150301//EN"
+ 14. JATS became version "1.1d3" and "v1.1d3 20150301"
   
      =============================================================
      JATS Version 1.1d2             (DAL/BTU) v1.1d2  (2014-09-30)
@@ -133,13 +267,15 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      =============================================================
      NISO JATS Version 1.1d1           (DAL/BTU) v1.1 (2013-11-15)
    
-     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1) 
+     ANSI/NISO Z39.96-2012 (pre-release for V1.0 BITS; Version 1.1d1) 
 
      NISO JATS Standing Committee met and answered the requests and
      suggestions from the NISO request forms.
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
+
+     Details concerning ANSI/NISO Z39.96-2012
+     JATS-based DTDs, XSDs, 
      RNGs and supporting documentation are available at
-           http://jats.nlm.nih.gov/1.1/
+           http://jats.nlm.nih.gov/1.0/
 
  12. NEW CODE ELEMENT- Added <code> to
       - alternatives-display.class
@@ -155,12 +291,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
    
      =============================================================
      NISO JATS Version 1.0             (DAL/BTU) v1.0 (2012-xx-xx)
-   
-     ANSI/NISO Z39.96-2012 (Version 1.0) 
-
-     Details concerning ANSI/NISO Z39.96-2012 JATS-based DTDs, XSDs, 
-     RNGs and supporting documentation are available at
-           http://jats.nlm.nih.gov/1.0/
 
   9. CITATION ALTERNATIVES - Added a new element 
      <citation-alternatives> to the citation.class. The element
@@ -168,8 +298,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      languages or a single citation tagged as a <mixed-citation>
      complete with punctuation and spacing and also as an
      <element-citation> with all punctuation and spacing removed.
-   
-   
+     
  8.  COLLABORATION ALTERNATIVES - Added <collab-alternatives> to
      the name.class, to allow a <collab-alternatives> elements to
      be anywhere <collab> already was.
@@ -206,7 +335,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      of an institution in two languages or two scripts.
 
   3. NAME ALTERNATIVES - Added <name-alternatives> to
-     %name.class;, to therefore be used where name is allowed.
+     name.class, to therefore be used where name is allowed.
 
   2. EMPHASIS CLASS - Added <san-serif> to emphasis elements.
 
@@ -223,7 +352,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
      Details on version 3.0 are available at
            http://dtd.nlm.nih.gov/3.0.
 
-  1. Updated public identifier to "v3.0 20080202//EN"              -->
+  1. Updated public identifier to "v3.0 20071031//EN"              -->
+
+<!-- ============================================================= -->
+<!-- Details concerning 
+     ANSI/NISO Z39.96-2015 JATS-based DTDs, XSDs, 
+     RNGs and supporting documentation are available at
+           http://jats.nlm.nih.gov/1.1/                            -->
 
 <!-- ============================================================= -->
 <!--                    PARAMETER ENTITIES FOR CLASS OVER-RIDES    -->
@@ -257,7 +392,9 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         or phrase in the text because the subject
                         (content) should be identified as something
                         special or different.                      -->
-<!ENTITY % phrase.class "abbrev | named-content | styled-content"    >
+<!ENTITY % phrase.class "abbrev | 
+                         index-term | index-term-range-end |
+                         named-content | styled-content"    >
 
 
 <!-- ============================================================= -->
@@ -271,7 +408,7 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                                                                    -->
 <!ENTITY % alternatives-display.class
                         "chem-struct | code | graphic | 
-                         inline-graphic |
+                         inline-graphic | inline-media | 
                          inline-supplementary-material |
                          media | preformat | private-char |
                          supplementary-material | table |
@@ -285,8 +422,33 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
                         although they are typically at the same
                         hierarchical level as a paragraph.         -->
 <!ENTITY % block-display.class
-                        "boxed-text | chem-struct-wrap | code |
+                        "answer | answer-set |
+                         boxed-text | chem-struct-wrap | code |
+                         explanation | 
+                         fig | graphic | media | preformat | 
+                         question | question-wrap | 
+                         question-wrap-group |
+                         supplementary-material | table-wrap"        >
+
+<!ENTITY % block-display-noalt.class
+                        "answer | answer-set |
+                         boxed-text | chem-struct-wrap | code |
+                         explanation | 
+                         fig | graphic | media | preformat | 
+                         question | question-wrap | 
+                         question-wrap-group |
+                         supplementary-material | table-wrap"        >
+
+<!--                    DISPLAY CLASS ELEMENTS MINUS EXPLANATION   -->
+<!--                    The same as block-display.class without
+                        the explanation element, for use in 
+                        <answer> and <option> elements.            -->
+<!ENTITY % block-display-minus-explanation.class
+                        "answer | answer-set |
+                         boxed-text | chem-struct-wrap | code |
                          fig | graphic | media | preformat |
+                         question | question-wrap | 
+                         question-wrap-group |
                          supplementary-material | table-wrap"        >
 
 
@@ -294,7 +456,8 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    Non-block display elements that set or
                         display inline with the text               -->
 <!ENTITY % inline-display.class
-                        "alternatives | inline-graphic"              >
+                        "alternatives | inline-graphic |
+                         inline-media"                               >
 
 
 <!--                    SIMPLE DISPLAY ELEMENTS                    -->
@@ -319,6 +482,13 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!ENTITY % rest-of-para.class
                         "disp-quote | speech | statement |
                          verse-group"                                >
+
+
+<!--                    SECTION BACK MATTER CLASS                  -->
+<!--                    Ancillary elements, typically used in the
+                        back matter of a section, etc.             -->
+<!ENTITY % sec-back.class
+                        "glossary |  ref-list"                       >
 
 
 <!-- ============================================================= -->
@@ -354,14 +524,6 @@ Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
 <!--                    DATE CLASS ELEMENTS                        -->
 <!--                    Dates and other matters of history         -->
 <!ENTITY % date.class   "date"                                       >
-
-
-<!--                    NAMES CLASS                                -->
-<!--                    The elements used to name the personal names
-                        for individuals and the collaboration names
-                        for groups                                 -->
-<!ENTITY % name.class   "anonymous | collab | collab-alternatives |
-                         name | name-alternatives"                   >
 
 
 <!--                    MATHEMATICAL EXPRESSIONS
