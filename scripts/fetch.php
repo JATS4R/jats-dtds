@@ -67,7 +67,14 @@ $versions = [
     '1.2d1' => '20170631',
     '1.2d2' => '20180401',
     '1.2' => '20190208',
-    '1.3d1' => '20190831'
+    '1.3d1' => '20190831',
+    '1.3d2' => '20201130',
+    '1.3' => '20210610',
+];
+
+$suffixes = [
+    '1.3d2' => '1-3d2',
+    '1.3' => '1-3',
 ];
 
 $files = [
@@ -100,6 +107,10 @@ $ignore = [
 foreach ($files as $colour => $names) {
     foreach ($versions as $version => $date) {
         foreach ($names as $name => $title) {
+            if (array_key_exists($version, $suffixes)) {
+                $name = str_replace('1', $suffixes[$version], $name);
+            }
+
             $publicId = "-//NLM//DTD JATS (Z39.96) {$title} v{$version} {$date}//EN";
             $systemId = "http://jats.nlm.nih.gov/{$colour}/{$version}/JATS-{$name}.dtd";
 
