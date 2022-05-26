@@ -2,7 +2,6 @@
   "name": "jats-dtds",
   "version": 2,
   "alias": "jats-dtds.vercel.app",
-  "scope": "jats4r",
   "builds": [
     { "src": "./schema/**", "use": "@vercel/static" }
   ]
