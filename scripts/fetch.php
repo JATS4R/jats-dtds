@@ -120,7 +120,22 @@ foreach ($files as $colour => $names) {
 
             $xml = <<<XML
 <!DOCTYPE article PUBLIC "$publicId" "$systemId">
-<article/>
+<article>
+    <front>
+        <journal-meta>
+            <journal-id/>
+            <issn/>
+        </journal-meta>
+        <article-meta>
+            <title-group>
+                <article-title/>
+            </title-group>
+            <pub-date>
+                <year/>
+            </pub-date>
+        </article-meta>
+    </front>
+</article>
 XML;
             $doc = new DOMDocument;
             $doc->loadXML($xml, LIBXML_DTDLOAD);
