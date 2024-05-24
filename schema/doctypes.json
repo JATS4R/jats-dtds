@@ -41,6 +41,10 @@
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.3\/JATS-archivearticle1-3-mathml3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.3\/JATS-archive-oasis-article1-3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.3\/JATS-archive-oasis-article1-3-mathml3.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.4d1\/JATS-archivearticle1-4d1.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.4d1\/JATS-archivearticle1-4d1-mathml3.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.4d1\/JATS-archive-oasis-article1-4d1.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/archiving\/1.4d1\/JATS-archive-oasis-article1-4d1-mathml3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD v1.0 20120330\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.0\/JATS-articleauthoring1.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD v1.1d1 20130915\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.1d1\/JATS-articleauthoring1.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD with MathML3 v1.1d1 20130915\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.1d1\/JATS-articleauthoring1-mathml3.dtd",
@@ -62,6 +66,8 @@
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD with MathML3 v1.3d2 20201130\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.3d2\/JATS-articleauthoring1-3d2-mathml3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.3\/JATS-articleauthoring1-3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.3\/JATS-articleauthoring1-3-mathml3.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.4d1\/JATS-articleauthoring1-4d1.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Article Authoring DTD with MathML3 v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/articleauthoring\/1.4d1\/JATS-articleauthoring1-4d1-mathml3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD v1.0 20120330\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.0\/JATS-journalpublishing1.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables v1.0 20120330\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.0\/JATS-journalpublishing-oasis-article1.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD v1.1d1 20130915\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.1d1\/JATS-journalpublishing1.dtd",
@@ -103,5 +109,9 @@
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.3\/JATS-journalpublishing1-3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.3\/JATS-journalpublishing1-3-mathml3.dtd",
     "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.3\/JATS-journalpublishing-oasis-article1-3.dtd",
-    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.3\/JATS-journalpublishing-oasis-article1-3-mathml3.dtd"
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables with MathML3 v1.3 20210610\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.3\/JATS-journalpublishing-oasis-article1-3-mathml3.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.4d1\/JATS-journalpublishing1-4d1.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with MathML3 v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.4d1\/JATS-journalpublishing1-4d1-mathml3.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.4d1\/JATS-journalpublishing-oasis-article1-4d1.dtd",
+    "-\/\/NLM\/\/DTD JATS (Z39.96) Journal Publishing DTD with OASIS Tables with MathML3 v1.4d1 20240201\/\/EN": "http:\/\/jats.nlm.nih.gov\/publishing\/1.4d1\/JATS-journalpublishing-oasis-article1-4d1-mathml3.dtd"
 }
