@@ -1,0 +1,279 @@
+<!-- ============================================================= -->
+<!--  MODULE:    JATS BITS Multi-lingual Attribute Overrides       -->
+<!--  VERSION:   ANSI/NISO JATS Version 1.4 (Z39.96-202x)          -->
+<!--  DATE:      October 2024                                      -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                        TYPICAL INVOCATION                     -->
+<!--
+"-//NLM//DTD JATS BITS Multi-lingual Attribute Overrides v1.4 20241031//EN"
+     Delivered as file "bits-multi-lingual-atts1-4.ent"          -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     JATS DTD Suite                                    -->
+<!--                                                               -->
+<!-- PURPOSE:    Override all the content-element attribute lists  -->
+<!--             in the BITS Embedded Index Term & Question/Answer -->
+<!--             modules to add the multi-lingual attributes. This -->
+<!--             is a separate module so that this module can be   -->
+<!--             discarded if BITS adds multi-lingual modeling.    -->
+<!--                                                               -->
+<!-- TAG SET SPONSOR                                               -->
+<!--             National Center for Biotechnology                 -->
+<!--                Information (NCBI)                             -->
+<!--             National Library of Medicine (NLM)                -->
+<!--                                                               -->
+<!-- CREATED FOR:                                                  -->
+<!--             This module was created for the JATS DTD Suite.   -->
+<!--             Digital archives and publishers may use the       -->
+<!--             DTD as is for markup of journal literature or     -->
+<!--             related material for archiving and transferring   -->
+<!--             such material between archives or create a        -->
+<!--             custom XML DTD from the Suite for                 -->
+<!--             these purposes.                                   -->
+<!--                                                               -->
+<!--             This DTD is in the public domain. An organization -->
+<!--             that wishes to create its own DTD from the suite  -->
+<!--             may do so without permission from NLM.            -->
+<!--                                                               -->
+<!--             The suite has been set up to be extended using a  -->
+<!--             new DTD file and a new DTD-specific customization -->
+<!--             module to redefine the many Parameter Entities.   -->
+<!--             Do not modify the suite directly or redistribute  -->
+<!--             modified versions of the suite.                   -->
+<!--                                                               -->
+<!--             In the interest of maintaining consistency and    -->
+<!--             clarity for potential users, NLM requests:        -->
+<!--                                                               -->
+<!--             1. If you create a DTD from the JATS DTD Suite    -->
+<!--                and intend to stay compatible with the suite,  -->
+<!--                then please include the following statement    -->
+<!--                as a comment in all of your DTD modules:       -->
+<!--                   "Created from, and fully compatible with,   -->
+<!--                    the ANSI/NISO Z39.96 Journal Article Tag   -->
+<!--                    Suite (JATS)."                             -->
+<!--                                                               -->
+<!--             2. If you alter one or more modules of the suite, -->
+<!--                then please rename your version and all its    -->
+<!--                modules to avoid any confusion with the        -->
+<!--                original suite. Also, please include the       -->
+<!--                following statement as a comment in all your   -->
+<!--                DTD modules:                                   -->
+<!--                   "Based in part on, but not fully compatible -->
+<!--                    with, the ANSI/NISO Z39.96 Journal Article -->
+<!--                    Tag Suite (JATS)."                         -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             February 2015                                     -->
+<!--                                                               -->
+<!-- CREATED BY: Mulberry Technologies, Inc. for the NISO Z39.96   -->
+<!--             Working Group. Mulberry Technologies was          -->
+<!--             supported by National Center for Biotechnology    -->
+<!--             Information (NCBI), a center of the US National   -->
+<!--             Library of Medicine (NLM).                        -->
+<!--                                                               -->
+<!--             The Journal Publishing DTD is built from the      -->
+<!--             Journal Archiving and Interchange DTD Suite.      -->
+<!--                                                               -->
+<!--             Suggestions for refinements and enhancements to   -->
+<!--             this DTD should be sent in email to:              -->
+<!--                 jats@ncbi.nlm.nih.gov                         -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DTD VERSION/CHANGE HISTORY                 -->
+<!-- ============================================================= -->
+<!--
+Version  Reason/Occasion                   (who) vx.x (yyyy-mm-dd)
+   ==============================================================
+ 
+   ==============================================================
+                                                                   -->
+
+<!-- ============================================================= -->
+<!--                    PARAMETER ENTITIES FOR ATTRIBUTE VALUES    -->
+<!--                    Placed here (unchanged) because of the     -->
+<!--                    order of operation of PEs.                 -->
+<!-- ============================================================= -->
+
+
+<!--                    TYPES OF ANSWERS                           -->
+<!--                    Used to name the type of question or
+                        question set.                              -->
+<!ENTITY % answer-types "essay | fill-in-the-blank | multi-select |
+                         multiple-choice | short-answer |
+                         true-false | custom"                        >
+
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE OVERRIDES FOR BITS MULTI-LINGUAL --> 
+<!--                    EMBEDDED INDEX TERMS                       --> 
+<!-- ============================================================= -->
+
+
+<!--                    INDEX-TERM ATTRIBUTES                      -->
+<!--                    Attribute list for <index-term> element.   -->
+<!ENTITY % index-term-atts
+           "%jats-common-atts;
+             index-type NMTOKENS                          #IMPLIED
+             sort-key   CDATA                             #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    SEE ATTRIBUTES                             -->
+<!--                    Attribute list for <see> element.          -->
+<!ENTITY % see-atts
+           "%jats-common-atts;
+             rid        IDREFS                            #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;
+             vocab      CDATA                             #IMPLIED
+             vocab-identifier
+                        CDATA                             #IMPLIED
+             vocab-term CDATA                             #IMPLIED
+             vocab-term-identifier
+                        CDATA                             #IMPLIED"  >
+
+
+<!--                    SEE-ALSO ATTRIBUTES                        -->
+<!--                    Attribute list for <see-also> element.     -->
+<!ENTITY % see-also-atts
+           "%jats-common-atts;
+             rid        IDREFS                            #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;
+             vocab      CDATA                             #IMPLIED
+             vocab-identifier
+                        CDATA                             #IMPLIED
+             vocab-term CDATA                             #IMPLIED
+             vocab-term-identifier
+                        CDATA                             #IMPLIED"  >
+
+<!-- ============================================================= -->
+<!--                    ATTRIBUTE OVERRIDES FOR BITS MULTI-LINGUAL --> 
+<!--                    QUESTION/ANSWER ELEMENTS                   --> 
+<!-- ============================================================= -->
+
+
+<!--                    QUESTION ATTRIBUTES                        -->
+<!--                    Attributes for the <question> element      -->
+<!ENTITY % question-atts
+           "%jats-common-atts;
+             question-response-type
+                        (%answer-types;)                  #IMPLIED
+             custom-type
+                        CDATA                             #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+
+<!--                    QUESTION PREAMBLE ATTRIBUTES               -->
+<!--                    Attributes for the <question-preamble> 
+                                                           element -->
+<!ENTITY % question-preamble-atts
+           "%jats-common-atts;
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    QUESTION WRAP ATTRIBUTES                   -->
+<!--                    Attributes for the <question-wrap> element -->
+<!ENTITY % question-wrap-atts
+           "%jats-common-atts;
+             audience   CDATA                             #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    QUESTION WRAP GROUP ATTRIBUTES             -->
+<!--                    Attributes for the <question-wrap-group> 
+                        element                                    -->
+<!ENTITY % question-wrap-group-atts
+           "%jats-common-atts;
+             audience   CDATA                             #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    ANSWER ATTRIBUTES                          -->
+<!--                    Attributes for the <answer> element        -->
+<!ENTITY % answer-atts
+           "%jats-common-atts;
+             pointer-to-question
+                        IDREFS                            #REQUIRED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    ANSWER SET ATTRIBUTES                      -->
+<!--                    Attributes for the <answer-set> element    -->
+<!ENTITY % answer-set-atts
+           "%jats-common-atts;
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    EXPLANATION ATTRIBUTES                     -->
+<!--                    Attributes for the <explanation> element   -->
+<!ENTITY % explanation-atts
+           "%jats-common-atts;
+             pointer-to-explained
+                        IDREFS                            #REQUIRED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      >
+
+<!--                    OPTION ATTRIBUTES                          -->
+<!--                    Attributes for the <option> element        -->
+<!ENTITY % option-atts  
+           "%jats-common-atts;
+             correct    (yes | no)                        #IMPLIED
+             content-type
+                        CDATA                             #IMPLIED
+             specific-use
+                        CDATA                             #IMPLIED
+             xml:lang   NMTOKEN                           #IMPLIED
+             %multi-lang-atts;"                                      > 
+
+<!-- ================== End BITS Multi-lingual Attributes ======== -->
+
