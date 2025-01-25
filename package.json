@@ -1,7 +1,10 @@
 {
   "name": "@jats4r/dtds",
   "version": "0.0.10",
-  "repository": "JATS4R/jats-dtds",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JATS4R/jats-dtds.git"
+  },
   "homepage": "https://jats-dtds.vercel.app/",
   "files": [
     "schema"
